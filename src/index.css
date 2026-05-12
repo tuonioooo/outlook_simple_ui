@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  overflow: hidden; /* Prevent body scroll, handle scrolling in panes */
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+.app-header {
+  background-color: #0078d4; /* Microsoft Blue */
+}
+
+.pane-border {
+  border-right: 1px solid #edebe9;
+}
+
+.list-item-active {
+  background-color: #e3f2fd;
+  position: relative;
+}
+.list-item-active::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background-color: #0f6cbd;
+}
+
+.folder-active {
+  background-color: #e3f2fd;
+  font-weight: 600;
+}
+
+.nav-icon {
+  color: #605e5c;
+}
+.nav-icon.active {
+  color: #0f6cbd;
+  background-color: #f3f2f1;
+  border-radius: 4px;
+}
+
+.ad-banner {
+  background-color: #f3f2f1;
+  border: 1px solid #e1dfdd;
+}
